@@ -1,0 +1,4 @@
+*************depedencias************
+
+python
+robotframework
