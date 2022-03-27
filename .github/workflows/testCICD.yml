@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]  
+
+name: site-hunting-ia-CI-CD
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Install robot framework
+      run:  pip install -U robotframework
