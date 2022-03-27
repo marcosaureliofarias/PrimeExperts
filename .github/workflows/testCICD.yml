@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]  
 
-name: site-hunting-ia-CI-CD
+name: RobotFramework
 
 jobs:
   deploy:
@@ -18,5 +18,8 @@ jobs:
     - name: Install robot framework
       run:  pip install -U robotframework
 
-    - name: Install robot framework
+    - name: Executando os testes
       run:  robot pessoa
+
+    - name: Executando os testes
+      run:  robot variables
