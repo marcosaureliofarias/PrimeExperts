@@ -17,3 +17,6 @@ jobs:
 
     - name: Install robot framework
       run:  pip install -U robotframework
+
+    - name: Install robot framework
+      run:  robot pessoa
