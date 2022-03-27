@@ -31,6 +31,8 @@ Logar no meu terminal uma PESSOA
     Log     ${PESSOA.nome} ${PESSOA.sobrenome} ${PESSOA.idade} anos!
 
 Logar no meu terminal uma lista de FRUTAS
+    ${nova_fruta}    Set Variable    morango
     Log To Console    ${\n}
-    Log To Console    ${FRUTAS}
-    Log Many          @{FRUTAS}  
+    Log To Console    ${FRUTAS} ${nova_fruta}
+    Log Many          @{FRUTAS} ${nova_fruta}
+    Log To Console    ${nova_fruta}

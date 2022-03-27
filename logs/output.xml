@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220327 16:50:32.450" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220327 17:14:06.891" rpa="false" schemaversion="3">
 <suite id="s1" name="Variables" source="C:\Users\gamer\Desktop\QA-primeControl\variables">
 <suite id="s1-s1" name="Teste Variaveis" source="C:\Users\gamer\Desktop\QA-primeControl\variables\teste_variaveis.robot">
-<test id="s1-s1-t1" name="Meu teste imprimindo um dicionario de PESSOA" line="16">
-<kw name="Logar no meu terminal uma PESSOA">
-<kw name="Log To Console" library="BuiltIn">
-<arg>${\n}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.503"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${PESSOA}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.504"/>
+<test id="s1-s1-t1" name="Meu teste imprimindo uma lista de FRUTAS" line="19">
+<kw name="Logar no meu terminal uma lista de FRUTAS">
+<kw name="Set Variable" library="BuiltIn">
+<var>${nova_fruta}</var>
+<arg>morango</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220327 17:14:06.938" level="INFO">${nova_fruta} = morango</msg>
+<status status="PASS" starttime="20220327 17:14:06.938" endtime="20220327 17:14:06.938"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220327 16:50:32.504" endtime="20220327 16:50:32.504"/>
+<status status="PASS" starttime="20220327 17:14:06.938" endtime="20220327 17:14:06.938"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${PESSOA.nome} ${PESSOA.sobrenome} ${PESSOA.idade} anos!</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220327 16:50:32.505" level="INFO">marcos aurelio 30 anos!</msg>
-<status status="PASS" starttime="20220327 16:50:32.504" endtime="20220327 16:50:32.505"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${FRUTAS} ${nova_fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220327 17:14:06.938" endtime="20220327 17:14:06.939"/>
 </kw>
-<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.505"/>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{FRUTAS} ${nova_fruta}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220327 17:14:06.939" level="INFO">['banana', 'maca', 'laranja'] morango</msg>
+<status status="PASS" starttime="20220327 17:14:06.939" endtime="20220327 17:14:06.939"/>
 </kw>
-<status status="PASS" starttime="20220327 16:50:32.502" endtime="20220327 16:50:32.506"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${nova_fruta}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220327 17:14:06.939" endtime="20220327 17:14:06.939"/>
+</kw>
+<status status="PASS" starttime="20220327 17:14:06.937" endtime="20220327 17:14:06.940"/>
+</kw>
+<status status="PASS" starttime="20220327 17:14:06.937" endtime="20220327 17:14:06.940"/>
 </test>
 <doc>Meu teste de variaveis</doc>
-<status status="PASS" starttime="20220327 16:50:32.477" endtime="20220327 16:50:32.506"/>
+<status status="PASS" starttime="20220327 17:14:06.919" endtime="20220327 17:14:06.941"/>
 </suite>
-<status status="PASS" starttime="20220327 16:50:32.467" endtime="20220327 16:50:32.507"/>
+<status status="PASS" starttime="20220327 17:14:06.891" endtime="20220327 17:14:06.942"/>
 </suite>
 <statistics>
 <total>
