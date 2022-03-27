@@ -18,8 +18,8 @@ jobs:
     - name: Install robot framework
       run:  pip install -U robotframework
 
-    - name: Executando os testes
+    - name: Caso de teste 1
       run:  robot pessoa
 
-    - name: Executando os testes
+    - name: Caso de teste 2
       run:  robot variables
