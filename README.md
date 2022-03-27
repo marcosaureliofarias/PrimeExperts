@@ -11,3 +11,5 @@ pip install -U robotframework
     - git add . - adiciona os arquivos modificados dentro do pacote 'commit
     - git commit -m "msg" - cria o commit a partir do pacote com msg
     - git push - envia para o repo remoto
+
+- Variaveis declaradas na secao *** variables *** tem o escopo global !

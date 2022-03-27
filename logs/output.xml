@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220327 16:50:32.450" rpa="false" schemaversion="3">
+<suite id="s1" name="Variables" source="C:\Users\gamer\Desktop\QA-primeControl\variables">
+<suite id="s1-s1" name="Teste Variaveis" source="C:\Users\gamer\Desktop\QA-primeControl\variables\teste_variaveis.robot">
+<test id="s1-s1-t1" name="Meu teste imprimindo um dicionario de PESSOA" line="16">
+<kw name="Logar no meu terminal uma PESSOA">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.503"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${PESSOA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.504"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220327 16:50:32.504" endtime="20220327 16:50:32.504"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${PESSOA.nome} ${PESSOA.sobrenome} ${PESSOA.idade} anos!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220327 16:50:32.505" level="INFO">marcos aurelio 30 anos!</msg>
+<status status="PASS" starttime="20220327 16:50:32.504" endtime="20220327 16:50:32.505"/>
+</kw>
+<status status="PASS" starttime="20220327 16:50:32.503" endtime="20220327 16:50:32.505"/>
+</kw>
+<status status="PASS" starttime="20220327 16:50:32.502" endtime="20220327 16:50:32.506"/>
+</test>
+<doc>Meu teste de variaveis</doc>
+<status status="PASS" starttime="20220327 16:50:32.477" endtime="20220327 16:50:32.506"/>
+</suite>
+<status status="PASS" starttime="20220327 16:50:32.467" endtime="20220327 16:50:32.507"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Variables">Variables</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Teste Variaveis">Variables.Teste Variaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
