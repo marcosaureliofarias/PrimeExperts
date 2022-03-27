@@ -5,6 +5,7 @@ Projeto prime experts criando repo para projetos robotframework
 pip install -U robotframework
 
 - comandos git:
+
     git clone - clonar repositorio remoto
     git status - verifica a area de trabalho local
     git add . - adiciona os arquivos modificados dentro do pacote 'commit
